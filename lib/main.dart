@@ -38,7 +38,8 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary, // warna AppBar dari tema
-        title: const Text('Daftar Karyawan'), // judul AppBar
+        title: const Text('Data Karyawan'), // judul AppBar
+        foregroundColor: Colors.white, // warna teks AppBar
       ),
       // FutureBuilder untuk menangani data async
       body: FutureBuilder(
