@@ -56,7 +56,14 @@ class MyHomePage extends StatelessWidget {
                 final karyawan = snapshot.data![index]; // ambil data karyawan per index
                 return ListTile(
                   title: Text(karyawan.nama), // tampilkan nama sebagai judul
-                  subtitle: Text(karyawan.umur.toString()), // tampilkan umur
+                    subtitle: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('${karyawan.umur} tahun'),
+                      Text('${karyawan.alamat.jalan}, ${karyawan.alamat.kota}, ${karyawan.alamat.provinsi}'),
+                      Text('Hobi: ${karyawan.hobi.join(', ')}'),
+                    ],
+                    ),
                 );
               },
             );
