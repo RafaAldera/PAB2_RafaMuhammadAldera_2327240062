@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage();
+  const MyHomePage({super.key});
 
   // ✨ Tambahkan fungsi ini
   Future<List<Karyawan>> _readJsonData() async {

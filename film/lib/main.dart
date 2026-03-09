@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:pilem/screens/home_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
